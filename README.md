@@ -8,6 +8,10 @@
 
 ---
 
+Version in Python: [GitHub repository](https://github.com/8Observer8/collision-detection-pybox2d-2.3.1-pysdl-3.3.2-python)
+
+---
+
 ## File Sizes
 
 **WASM ( built with Emscripten 4.0.15):**
