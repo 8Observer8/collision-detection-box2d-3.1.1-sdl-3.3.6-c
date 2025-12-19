@@ -16,7 +16,7 @@ Version in Python: [GitHub repository](https://github.com/8Observer8/collision-d
 
 **WASM ( built with Emscripten 4.0.15):**
 
-- `index.html` — 3.27 KB
+- `index.html` — 3.64 KB
 - `app.js` — 186 KB
 - `app.wasm` — 2.17 MB
 - **Total:** 2.35 MB
