@@ -248,6 +248,9 @@ SDL_AppResult SDL_AppEvent(void *appstate, SDL_Event *event)
                 keys.right = false;
             break;
         }
+
+        default:
+            break;
     }
 
     return SDL_APP_CONTINUE;
