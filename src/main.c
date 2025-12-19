@@ -292,18 +292,19 @@ SDL_AppResult SDL_AppIterate(void *appstate)
 
     accumulator += frameTime;
 
-    // Step physics
     while (accumulator >= TIME_STEP)
     {
+        // Step physics
         b2World_Step(worldId, TIME_STEP, 3);
+
+        // Read contact events immediately
+        ProcessContactEvents(worldId, &contactData);
+
         accumulator -= TIME_STEP;
     }
 
     // Process keyboard input
     keyboard();
-
-    // Process contacts
-    ProcessContactEvents(worldId, &contactData);
 
     // --- Update text only when dirty ---
     if (contactData.dirty)
